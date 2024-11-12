@@ -1,2 +1,11 @@
-# baptist3-ng.github.io
+# Website Plan
+
+## Description
+
 Just a simple website.
+
+## TO DO : 
+
+- Add new pages
+- Reduce code size
+- Add responsive
