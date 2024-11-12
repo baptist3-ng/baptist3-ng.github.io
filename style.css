@@ -1,0 +1,131 @@
+body {
+  /*background: rgb(95, 92, 92);*/
+  background-image: url(./img/background.webp);
+  background-size: cover;
+  margin: 0px;
+}
+
+section {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  width: 60%;
+}
+
+.top {
+  background-color: rgb(29, 28, 28);
+  padding-top: 10px;
+  /*margin-left: 10px;*/
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre externe */
+  transition: box-shadow 0.3s ease; /* Transition pour un effet au survol */
+}
+
+.top:hover{
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
+}
+
+.dot-1 {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #ea0505;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.dot-2 {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #ffe600;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.dot-3 {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #00e217;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.dot-1:hover {
+  background-color: #ff3333;
+}
+
+.dot-2:hover {
+  background-color: #f3ff0a;
+}
+
+.dot-3:hover {
+  background-color: #44ff00;
+}
+
+.title {
+  margin-left: 32%;
+  color: white;
+  font-size: 25px;
+}
+
+.main-content {
+  /*margin-left: 10px;*/
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+  color: white;
+  font-size: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 7px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre externe */
+  transition: box-shadow 0.3s ease; /* Transition pour un effet au survol */
+}
+
+.main-content:hover {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
+}
+
+
+.main-content div {
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.select div a{
+  text-decoration: none;
+  color: white;
+  transition: 0.6s;
+}
+
+.select div a:hover{
+  color: rgb(23, 46, 255);
+}
+
+#typing::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255); /* Soulignement comme curseur */
+  animation: blink 0.6s steps(2) infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.bottom {
+  padding-bottom: 30px;
+}
+
