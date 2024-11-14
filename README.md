@@ -1,11 +1,10 @@
-# Website Plan
+# 👽 Website Plan
 
-## Description
+## 📑 Description
 
 Just a simple website.
 
-## TO DO : 
+## ✍️ TO DO : 
 
-- Add new pages
-- Reduce code size
-- Add responsive
+- Add new pages 
+- Add responsive 
