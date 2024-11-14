@@ -5,11 +5,18 @@ body {
   margin: 0px;
 }
 
-section {
+.section-home {
   position: absolute;
   top: 150px;
   left: 300px;
   width: 60%;
+}
+
+.section-profile {
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  width: 80%;
 }
 
 .top {
@@ -23,7 +30,22 @@ section {
   transition: box-shadow 0.3s ease; /* Transition pour un effet au survol */
 }
 
+.top-profile {
+  background-color: rgb(206, 206, 206);
+  padding-top: 10px;
+  /*margin-left: 10px;*/
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre externe */
+  transition: box-shadow 0.3s ease; /* Transition pour un effet au survol */
+}
+
 .top:hover{
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
+}
+
+.top-profile:hover{
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
 }
 
@@ -75,6 +97,12 @@ section {
   font-size: 25px;
 }
 
+.title-profile {
+  margin-left: 30%;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
 .main-content {
   /*margin-left: 10px;*/
   background-color: rgb(0, 0, 0);
@@ -88,14 +116,47 @@ section {
   transition: box-shadow 0.3s ease; /* Transition pour un effet au survol */
 }
 
+.main-content div {
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
 .main-content:hover {
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
 }
 
+.main-content-profile {
+  /*margin-left: 10px;*/
+  background-color: rgb(194, 194, 194);
+  opacity: 0.9;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 1px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre externe */
+  transition: box-shadow 0.3s ease; /* Transition pour un effet au survol */
+}
 
-.main-content div {
+.main-content-profile:hover {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
+}
+
+
+.main-content-profile pre {
   margin-left: 10px;
-  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.main-content-profile pre a {
+  text-decoration: none;
+  color: blue;
+  transition: 0.4s;
+}
+
+.main-content-profile pre a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .select div a{
@@ -129,3 +190,60 @@ section {
   padding-bottom: 30px;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .section-home {
+    left: 100px;
+    width: 90%;
+  }
+
+  .section-profile {
+    left: 50px;
+    width: 90%;
+  }
+
+  .dot-1, .dot-2, .dot-3 {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-home, .section-profile {
+    left: 10px;
+    width: 100%;
+  }
+
+  .top, .top-profile {
+    padding: 8px;
+  }
+
+  .title, .title-profile {
+    font-size: 1.5rem;
+  }
+
+  .dot-1, .dot-2, .dot-3 {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-home, .section-profile {
+    left: 0;
+    width: 100%;
+  }
+
+  .top, .top-profile {
+    padding: 5px;
+  }
+
+  .title, .title-profile {
+    font-size: 1rem;
+  }
+
+  .dot-1, .dot-2, .dot-3 {
+    height: 18px;
+    width: 18px;
+  }
+}
