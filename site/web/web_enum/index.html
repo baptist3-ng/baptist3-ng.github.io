@@ -300,17 +300,17 @@
         <li class="md-nav__item">
   <a href="#dns-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      DNS Enumeration
+      🌐 DNS Enumeration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="DNS Enumeration">
+    <nav class="md-nav" aria-label="🌐 DNS Enumeration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#dns-zone-transfer" class="md-nav__link">
     <span class="md-ellipsis">
-      DNS Zone Transfer
+      🗂️ DNS Zone Transfer
     </span>
   </a>
   
@@ -324,7 +324,7 @@
         <li class="md-nav__item">
   <a href="#vhost-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      Vhost Enumeration
+      🏠 Vhost Enumeration
     </span>
   </a>
   
@@ -333,7 +333,7 @@
         <li class="md-nav__item">
   <a href="#directory-fuzzing" class="md-nav__link">
     <span class="md-ellipsis">
-      Directory fuzzing
+      📂 Directory fuzzing
     </span>
   </a>
   
@@ -480,6 +480,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SNMP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -507,17 +527,17 @@
         <li class="md-nav__item">
   <a href="#dns-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      DNS Enumeration
+      🌐 DNS Enumeration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="DNS Enumeration">
+    <nav class="md-nav" aria-label="🌐 DNS Enumeration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#dns-zone-transfer" class="md-nav__link">
     <span class="md-ellipsis">
-      DNS Zone Transfer
+      🗂️ DNS Zone Transfer
     </span>
   </a>
   
@@ -531,7 +551,7 @@
         <li class="md-nav__item">
   <a href="#vhost-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      Vhost Enumeration
+      🏠 Vhost Enumeration
     </span>
   </a>
   
@@ -540,7 +560,7 @@
         <li class="md-nav__item">
   <a href="#directory-fuzzing" class="md-nav__link">
     <span class="md-ellipsis">
-      Directory fuzzing
+      📂 Directory fuzzing
     </span>
   </a>
   
@@ -564,7 +584,7 @@
   <h1>Enumeration</h1>
 
 <p>Enumeration is the most important part during a pentest. Don't pass over !</p>
-<h2 id="dns-enumeration">DNS Enumeration</h2>
+<h2 id="dns-enumeration">🌐 DNS Enumeration</h2>
 <p>Enumerate information about <strong>DNS</strong> server.</p>
 <ul>
 <li><strong>dnsrecon</strong> on Kali Linux : </li>
@@ -577,7 +597,7 @@
 <p>Go to website and enter the target URL. The <em>View Graph</em> is useful !</p>
 </li>
 </ul>
-<h3 id="dns-zone-transfer">DNS Zone Transfer</h3>
+<h3 id="dns-zone-transfer">🗂️  DNS Zone Transfer</h3>
 <p>It involves an attacker requesting and receiving a copy of the entire <strong>DNS</strong> database, also known as a zone file, from a <strong>DNS</strong> server.</p>
 <ul>
 <li>dnsEnum : </li>
@@ -595,7 +615,7 @@
 <pre><code class="language-bash">fierce -dns zonetransfer.me
 </code></pre>
 <p><em>This tool can also brute-force subdomains</em>.</p>
-<h2 id="vhost-enumeration">Vhost Enumeration</h2>
+<h2 id="vhost-enumeration">🏠 Vhost Enumeration</h2>
 <p>To bruteforce <strong>vhost</strong>, you can use : </p>
 <ul>
 <li>Ffuf :</li>
@@ -607,11 +627,16 @@
 </ul>
 <pre><code class="language-bash">wfuzz -c -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -H &quot;Host: FUZZ.example.com&quot; -u http://example.com 
 </code></pre>
-<h2 id="directory-fuzzing">Directory fuzzing</h2>
+<h2 id="directory-fuzzing">📂 Directory fuzzing</h2>
 <ul>
 <li>Gobuster :</li>
 </ul>
 <pre><code class="language-bash">gobuster dir --url http://target.me/ -w /opt/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -x html,php,txt,zip,bak
+</code></pre>
+<ul>
+<li>Gobuster with Basic Auth :</li>
+</ul>
+<pre><code class="language-bash">gobuster dir --url http://target.me/ -w /opt/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -x html,php,txt,zip,bak -U admin -P admin
 </code></pre>
 <ul>
 <li>Dirb (for recursive mode) :</li>
