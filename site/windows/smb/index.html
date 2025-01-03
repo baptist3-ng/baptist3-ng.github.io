@@ -425,7 +425,7 @@
         <li class="md-nav__item">
   <a href="#list-shares" class="md-nav__link">
     <span class="md-ellipsis">
-      List shares
+      📂 List shares
     </span>
   </a>
   
@@ -434,7 +434,7 @@
         <li class="md-nav__item">
   <a href="#enumerate-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Enumerate users
+      🔍 Enumerate users
     </span>
   </a>
   
@@ -443,7 +443,7 @@
         <li class="md-nav__item">
   <a href="#bruteforce" class="md-nav__link">
     <span class="md-ellipsis">
-      Bruteforce
+      🛠️ Bruteforce
     </span>
   </a>
   
@@ -512,7 +512,7 @@
         <li class="md-nav__item">
   <a href="#list-shares" class="md-nav__link">
     <span class="md-ellipsis">
-      List shares
+      📂 List shares
     </span>
   </a>
   
@@ -521,7 +521,7 @@
         <li class="md-nav__item">
   <a href="#enumerate-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Enumerate users
+      🔍 Enumerate users
     </span>
   </a>
   
@@ -530,7 +530,7 @@
         <li class="md-nav__item">
   <a href="#bruteforce" class="md-nav__link">
     <span class="md-ellipsis">
-      Bruteforce
+      🛠️ Bruteforce
     </span>
   </a>
   
@@ -557,7 +557,7 @@
 <p>SMB stands for Server Message Block. It is a network file sharing protocol that allows applications on a computer to read and write to files and to request services from server programs in a computer network.</p>
 </blockquote>
 <p>Source : <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview">Microsoft</a></p>
-<h2 id="list-shares">List shares</h2>
+<h2 id="list-shares">📂 List shares</h2>
 <p>With <strong>nxc</strong> tool :</p>
 <pre><code class="language-bash">nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
 </code></pre>
@@ -575,7 +575,7 @@ smbmap -H 10.0.28.123 -u &quot;administrator&quot; -p 'password' --upload '/root
 
 smbclient //192.42.109.3/public -U &quot;&quot;
 </code></pre>
-<h2 id="enumerate-users">Enumerate users</h2>
+<h2 id="enumerate-users">🔍 Enumerate users</h2>
 <p>You can enumerate active users on the targets : </p>
 <pre><code class="language-bash"># -a to enum all options
 enum4linux -a &lt;IP&gt;
@@ -586,7 +586,7 @@ rpcclient -U &quot;&quot; -N &lt;IP&gt;
 # Metasploit Module :
 use auxiliary/scanner/smb/smb_enumusers
 </code></pre>
-<h2 id="bruteforce">Bruteforce</h2>
+<h2 id="bruteforce">🛠️  Bruteforce</h2>
 <p>This can be done with <strong>hydra</strong> : </p>
 <pre><code class="language-bash">hydra -l Administrator -P /opt/rockyou.txt smb://&lt;IP&gt; -v -V
 </code></pre>
