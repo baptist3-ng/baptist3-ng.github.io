@@ -469,7 +469,7 @@
         <li class="md-nav__item">
   <a href="#version" class="md-nav__link">
     <span class="md-ellipsis">
-      Version
+      📄 Version
     </span>
   </a>
   
@@ -478,7 +478,7 @@
         <li class="md-nav__item">
   <a href="#username-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      Username Enumeration
+      👤 Username Enumeration
     </span>
   </a>
   
@@ -487,7 +487,7 @@
         <li class="md-nav__item">
   <a href="#send-an-email" class="md-nav__link">
     <span class="md-ellipsis">
-      Send an email
+      📧 Send an email
     </span>
   </a>
   
@@ -528,7 +528,7 @@
         <li class="md-nav__item">
   <a href="#version" class="md-nav__link">
     <span class="md-ellipsis">
-      Version
+      📄 Version
     </span>
   </a>
   
@@ -537,7 +537,7 @@
         <li class="md-nav__item">
   <a href="#username-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      Username Enumeration
+      👤 Username Enumeration
     </span>
   </a>
   
@@ -546,7 +546,7 @@
         <li class="md-nav__item">
   <a href="#send-an-email" class="md-nav__link">
     <span class="md-ellipsis">
-      Send an email
+      📧 Send an email
     </span>
   </a>
   
@@ -573,7 +573,7 @@
 <p>SMTP (Simple Mail Transfer Protocol) is a communication protocol that is used for
 the transmission of email.</p>
 </blockquote>
-<h3 id="version">Version</h3>
+<h3 id="version">📄 Version</h3>
 <p>Get the SMTP version :</p>
 <pre><code class="language-bash"># Metasploit Module :
 use auxiliary/scanner/smtp/smtp_version
@@ -581,7 +581,7 @@ use auxiliary/scanner/smtp/smtp_version
 # Banner Grabbing :
 nc -vn &lt;IP&gt; 25
 </code></pre>
-<h3 id="username-enumeration">Username Enumeration</h3>
+<h3 id="username-enumeration">👤 Username Enumeration</h3>
 <p><em>Source</em> : <a href="https://book.hacktricks.xyz/network-services-pentesting/pentesting-smtp#username-bruteforce-enumeration">HackTricks</a></p>
 <p><strong>Manually</strong> : This technique uses <code>VRFY</code> : </p>
 <pre><code class="language-bash">$ telnet 1.1.1.1 25
@@ -611,7 +611,7 @@ $ smtp-user-enum -M EXPN -D example.com -U users.txt -t 10.0.0.1
 # Metasploit Module :
 use auxiliary/scanner/smtp/smtp_enum
 </code></pre>
-<h3 id="send-an-email">Send an email</h3>
+<h3 id="send-an-email">📧 Send an email</h3>
 <pre><code class="language-bash"># sendemail :
 sendemail -f admin@attacker.xyz -t root@openmailbox.xyz -s demo.ine.local -u Fakemail -m &quot;Hi root, a fake from admin&quot; -o tls=no
 </code></pre>
