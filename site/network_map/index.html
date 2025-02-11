@@ -267,6 +267,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🌍 Host Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tip-identify-an-os-using-ttl-time-to-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Tip : Identify an OS using TTL (Time-To-Live)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -563,6 +578,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🌍 Host Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tip-identify-an-os-using-ttl-time-to-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Tip : Identify an OS using TTL (Time-To-Live)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -612,8 +642,8 @@
 <blockquote>
 <p>Network mapping in the context of penetration testing refers to the process of discovering and identifying devices, hosts, and network infrastructure elements within a target network.</p>
 </blockquote>
-<h3 id="host-discovery">🌍 Host Discovery</h3>
-<p>We can perform a pingsweeps by sending ICMP packets to each host of the range and wait for a response.</p>
+<h2 id="host-discovery">🌍 Host Discovery</h2>
+<p>We can perform a <strong>Ping Sweep</strong> by sending <strong>ICMP</strong> packets to each host of the range and wait for a response.</p>
 <pre><code class="language-bash">fping -g 172.31.0.0/24
 </code></pre>
 <p>We can also use <strong>Nmap</strong> : </p>
@@ -622,10 +652,57 @@
 <p>With a target file : </p>
 <pre><code class="language-bash">nmap -sn -iL targets.txt
 </code></pre>
+<p>Specify multiple IP addresses or define a range :</p>
+<pre><code class="language-bash">nmap -sn 10.129.2.18 10.129.2.19 10.129.2.20
+nmap -sn 10.129.2.18-20
+</code></pre>
 <p>Using SYN Ping scan (really useful !) : </p>
 <pre><code class="language-bash">nmap -sn -PS 192.168.1.27
 </code></pre>
-<h3 id="port-scanning">🎯 Port Scanning</h3>
+<p><br></p>
+<p>By default, <strong>Nmap</strong> doesn't send <strong>ICMP echo request</strong>. It sends <strong>ARP ping</strong> and wait for <strong>ARP reply</strong>. Use <code>--packet-trace</code> option to confirm : </p>
+<pre><code class="language-bash">nmap -sn 10.129.2.18 -PE --packet-trace
+
+# Result : 
+SENT (0.0074s) ARP who-has ...
+RCVD (0.0309s) ARP reply ...
+</code></pre>
+<p>Of course, you can disable <strong>ARP Ping Scan</strong> with <code>--disable-arp-ping</code> :</p>
+<pre><code class="language-bash">nmap -sn 10.129.2.18 -PE --disable-arp-ping
+</code></pre>
+<p>You can also use <code>--reason</code> option to determine why <strong>Nmap</strong> has marked a target <code>alive</code> :</p>
+<pre><code class="language-bash">nmap -sn 10.129.2.18 -PE --reason
+nmap -sn 10.129.2.18 -PE --disable-arp-ping --reason
+
+# Result : 
+Host is up, received arp-response ...
+Host is up, received echo-reply ttl 64 (0.20s latency).
+</code></pre>
+<h3 id="tip-identify-an-os-using-ttl-time-to-live">💡 Tip : Identify an OS using TTL (Time-To-Live)</h3>
+<p>The <strong>TTL</strong> value can help determine the operating system of your target. In most cases, we have:</p>
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Default TTL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linux / Unix</td>
+<td>64</td>
+</tr>
+<tr>
+<td>Windows</td>
+<td>128</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>64</td>
+</tr>
+</tbody>
+</table>
+<h2 id="port-scanning">🎯 Port Scanning</h2>
 <p>Scan all ports with <strong>RustScan</strong>:</p>
 <pre><code class="language-bash">rustscan -a 10.10.10.10 -r 1-65535
 </code></pre>
@@ -647,7 +724,7 @@
 nmap -p1-5000 10.10.10.1
 nmap -p80,443,3389,8080 10.10.10.1
 </code></pre>
-<h3 id="service-version-and-os-detection">🔍 Service Version and OS Detection</h3>
+<h2 id="service-version-and-os-detection">🔍 Service Version and OS Detection</h2>
 <p>Get version of service : </p>
 <pre><code class="language-bash">nmap -sV 10.10.10.1 -p8080,443
 </code></pre>
@@ -657,7 +734,7 @@ nmap -p80,443,3389,8080 10.10.10.1
 <p>You can also use <em>aggressive</em> scan : </p>
 <pre><code class="language-bash">nmap -A 10.10.10.1 -p80,8080,443
 </code></pre>
-<h3 id="firewall-detection-ids-evasion">🛡️  Firewall Detection &amp; IDS Evasion</h3>
+<h2 id="firewall-detection-ids-evasion">🛡️  Firewall Detection &amp; IDS Evasion</h2>
 <p>Send fragmented packets : </p>
 <pre><code class="language-bash">nmap -sS -p80,445,3389 -f --mtu 8 10.10.10.1
 </code></pre>
