@@ -291,6 +291,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🎯 Port Scanning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rustscan" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ RustScan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      👓 Nmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip-add-options-to-have-a-clear-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Tip : Add options to have a clear view
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -602,6 +635,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🎯 Port Scanning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rustscan" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ RustScan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      👓 Nmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip-add-options-to-have-a-clear-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Tip : Add options to have a clear view
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -703,27 +769,62 @@ Host is up, received echo-reply ttl 64 (0.20s latency).
 </tbody>
 </table>
 <h2 id="port-scanning">🎯 Port Scanning</h2>
-<p>Scan all ports with <strong>RustScan</strong>:</p>
+<h3 id="rustscan">⚡ RustScan</h3>
+<blockquote>
+<p>🤖 The Modern Port Scanner 🤖. Available <a href="https://github.com/RustScan/RustScan">here</a>.</p>
+</blockquote>
+<ul>
+<li>Scan all TCP ports with <strong>RustScan</strong>:</li>
+</ul>
 <pre><code class="language-bash">rustscan -a 10.10.10.10 -r 1-65535
 </code></pre>
-<p>Use <strong>RustScan</strong> with <strong>Nmap</strong> scripts :</p>
+<ul>
+<li>Use <strong>RustScan</strong> with <strong>Nmap</strong> scripts :</li>
+</ul>
 <pre><code class="language-bash">rustscan -a 10.10.10.10 -r 1-65535 -- -A -oN nmap.txt
 </code></pre>
-<p>Simple scan with <strong>Nmap</strong> : </p>
+<h3 id="nmap">👓 Nmap</h3>
+<blockquote>
+<p>Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses.</p>
+</blockquote>
+<ul>
+<li>Basic scan with <strong>Nmap</strong> : </li>
+</ul>
 <pre><code class="language-bash">nmap 10.10.10.1
 </code></pre>
-<p>Stealth Scan (RECOMMENDED) : </p>
+<ul>
+<li>Stealth Scan (RECOMMENDED because it does not complete the full handshake) : </li>
+</ul>
 <pre><code class="language-bash">nmap -sS 10.10.10.1
 </code></pre>
 <p><strong><em>Important</em></strong> : If you are root, <strong>Nmap</strong> will perform a SYN Scan. If not, it will perform a TCP Scan. The difference is that SYN Scan doesn't create a TCP Connection (3 Way-Handshake).</p>
-<p><strong>UDP</strong> Scan : </p>
-<pre><code class="language-bash">nmap -sU 10.10.10.1
+<ul>
+<li>TCP Connect Scan : </li>
+</ul>
+<pre><code class="language-bash">nmap 10.129.2.28 -p 443 --packet-trace --disable-arp-ping -Pn -n --reason -sT
+
+# Will receive a syn-ack packet if the port is open
 </code></pre>
-<p>Custom port range : </p>
+<ul>
+<li><strong>UDP</strong> Scan : </li>
+</ul>
+<pre><code class="language-bash">nmap -sU 10.10.10.1
+nmap -sU -F 10.10.10.1 # Faster
+</code></pre>
+<ul>
+<li>Custom port range : </li>
+</ul>
 <pre><code class="language-bash">nmap -p- 10.10.10.1
 nmap -p1-5000 10.10.10.1
 nmap -p80,443,3389,8080 10.10.10.1
 </code></pre>
+<h3 id="tip-add-options-to-have-a-clear-view">💡 Tip : Add options to have a clear view</h3>
+<p>Here are some important options :</p>
+<ul>
+<li><code>-Pn</code> : disable <strong>ICMP echo</strong> requests.</li>
+<li><code>-n</code> : disable DNS resolution.</li>
+<li><code>--disable-arp-ping</code> : disable <strong>ARP ping</strong> scan.</li>
+</ul>
 <h2 id="service-version-and-os-detection">🔍 Service Version and OS Detection</h2>
 <p>Get version of service : </p>
 <pre><code class="language-bash">nmap -sV 10.10.10.1 -p8080,443
