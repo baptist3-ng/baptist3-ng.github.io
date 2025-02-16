@@ -263,11 +263,11 @@
         <li class="md-nav__item">
   <a href="#host-discovery" class="md-nav__link">
     <span class="md-ellipsis">
-      🌍 Host Discovery
+      🔳 Host Discovery
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🌍 Host Discovery">
+    <nav class="md-nav" aria-label="🔳 Host Discovery">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -287,11 +287,11 @@
         <li class="md-nav__item">
   <a href="#port-scanning" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Port Scanning
+      🔳 Port Scanning
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎯 Port Scanning">
+    <nav class="md-nav" aria-label="🔳 Port Scanning">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -329,7 +329,31 @@
         <li class="md-nav__item">
   <a href="#service-version-and-os-detection" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Service Version and OS Detection
+      🔳 Service Version and OS Detection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔳 Service Version and OS Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nmap-script-engine-nse" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔱 Nmap Script Engine (NSE)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Saving the results
     </span>
   </a>
   
@@ -338,7 +362,7 @@
         <li class="md-nav__item">
   <a href="#firewall-detection-ids-evasion" class="md-nav__link">
     <span class="md-ellipsis">
-      🛡️ Firewall Detection &amp; IDS Evasion
+      🔳 Firewall Detection &amp; IDS Evasion
     </span>
   </a>
   
@@ -607,11 +631,11 @@
         <li class="md-nav__item">
   <a href="#host-discovery" class="md-nav__link">
     <span class="md-ellipsis">
-      🌍 Host Discovery
+      🔳 Host Discovery
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🌍 Host Discovery">
+    <nav class="md-nav" aria-label="🔳 Host Discovery">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -631,11 +655,11 @@
         <li class="md-nav__item">
   <a href="#port-scanning" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Port Scanning
+      🔳 Port Scanning
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎯 Port Scanning">
+    <nav class="md-nav" aria-label="🔳 Port Scanning">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -673,7 +697,31 @@
         <li class="md-nav__item">
   <a href="#service-version-and-os-detection" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Service Version and OS Detection
+      🔳 Service Version and OS Detection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔳 Service Version and OS Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nmap-script-engine-nse" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔱 Nmap Script Engine (NSE)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Saving the results
     </span>
   </a>
   
@@ -682,7 +730,7 @@
         <li class="md-nav__item">
   <a href="#firewall-detection-ids-evasion" class="md-nav__link">
     <span class="md-ellipsis">
-      🛡️ Firewall Detection &amp; IDS Evasion
+      🔳 Firewall Detection &amp; IDS Evasion
     </span>
   </a>
   
@@ -708,7 +756,7 @@
 <blockquote>
 <p>Network mapping in the context of penetration testing refers to the process of discovering and identifying devices, hosts, and network infrastructure elements within a target network.</p>
 </blockquote>
-<h2 id="host-discovery">🌍 Host Discovery</h2>
+<h2 id="host-discovery">🔳 Host Discovery</h2>
 <p>We can perform a <strong>Ping Sweep</strong> by sending <strong>ICMP</strong> packets to each host of the range and wait for a response.</p>
 <pre><code class="language-bash">fping -g 172.31.0.0/24
 </code></pre>
@@ -768,7 +816,7 @@ Host is up, received echo-reply ttl 64 (0.20s latency).
 </tr>
 </tbody>
 </table>
-<h2 id="port-scanning">🎯 Port Scanning</h2>
+<h2 id="port-scanning">🔳 Port Scanning</h2>
 <h3 id="rustscan">⚡ RustScan</h3>
 <blockquote>
 <p>🤖 The Modern Port Scanner 🤖. Available <a href="https://github.com/RustScan/RustScan">here</a>.</p>
@@ -825,24 +873,83 @@ nmap -p80,443,3389,8080 10.10.10.1
 <li><code>-n</code> : disable DNS resolution.</li>
 <li><code>--disable-arp-ping</code> : disable <strong>ARP ping</strong> scan.</li>
 </ul>
-<h2 id="service-version-and-os-detection">🔍 Service Version and OS Detection</h2>
-<p>Get version of service : </p>
+<h2 id="service-version-and-os-detection">🔳 Service Version and OS Detection</h2>
+<ul>
+<li>Get version of service : </li>
+</ul>
 <pre><code class="language-bash">nmap -sV 10.10.10.1 -p8080,443
 </code></pre>
-<p>Get OS version : </p>
+<ul>
+<li>Use <strong>banner grabbing</strong> :</li>
+</ul>
+<pre><code class="language-bash">nc -nv 10.10.10.1 $PORT
+</code></pre>
+<ul>
+<li>Get OS version : </li>
+</ul>
 <pre><code class="language-bash">nmap -O 10.10.10.1
 </code></pre>
-<p>You can also use <em>aggressive</em> scan : </p>
+<ul>
+<li>You can also use <em>aggressive</em> scan : </li>
+</ul>
 <pre><code class="language-bash">nmap -A 10.10.10.1 -p80,8080,443
 </code></pre>
-<h2 id="firewall-detection-ids-evasion">🛡️  Firewall Detection &amp; IDS Evasion</h2>
-<p>Send fragmented packets : </p>
+<h3 id="nmap-script-engine-nse">🔱 Nmap Script Engine (NSE)</h3>
+<blockquote>
+<p>The Nmap Scripting Engine (NSE) is one of Nmap's most powerful and flexible features, allowing users to write and share simple scripts in Lua to automate various networking tasks.</p>
+</blockquote>
+<ul>
+<li>Default script :</li>
+</ul>
+<pre><code class="language-bash">nmap 10.10.10.10 -sC
+</code></pre>
+<ul>
+<li>Specific scripts category : </li>
+</ul>
+<pre><code class="language-bash">nmap 10.10.10.10 --script &lt;category&gt;
+</code></pre>
+<ul>
+<li>Defined scripts : </li>
+</ul>
+<pre><code class="language-bash">nmap 10.10.10.10 --script &lt;script-name&gt;,&lt;script-name&gt;,...
+</code></pre>
+<p>Check official documentation <a href="https://nmap.org/">here</a>.</p>
+<h2 id="saving-the-results">🔳 Saving the results</h2>
+<blockquote>
+<p>It is important to save your scans because you won't have to re-scan the target. You can also check differences between them.</p>
+</blockquote>
+<p>There are 3 different formats :</p>
+<ul>
+<li><strong>Normal</strong> output : <code>-oN</code> with <code>.nmap</code> extension.</li>
+<li><strong>Grepable</strong> output : <code>-oG</code> with <code>.gnmap</code> extension.</li>
+<li><strong>XML</strong> output : <code>-oX</code> with <code>.xml</code> extension.</li>
+</ul>
+<p>To save the results in all formats (<code>-oA</code>) :</p>
+<pre><code class="language-bash">nmap -F 10.10.10.10 -Pn -n --disable-arp-ping -oA fast_scan
+</code></pre>
+<p>You can create <strong>HTML</strong> reports from <strong>XML</strong> output :</p>
+<pre><code class="language-bash">xsltproc my_scan.xml -o my_scan.html
+</code></pre>
+<p><em>It can be useful for the documentation/report part.</em></p>
+<h2 id="firewall-detection-ids-evasion">🔳 Firewall Detection &amp; IDS Evasion</h2>
+<ul>
+<li>Send fragmented packets : </li>
+</ul>
 <pre><code class="language-bash">nmap -sS -p80,445,3389 -f --mtu 8 10.10.10.1
 </code></pre>
-<p>IP Address spoofing : </p>
-<pre><code class="language-bash">nmap -sS -p80,445,3389 -f --mtu 8 -D 192.168.1.1 --data-length 200 192.168.1.24
+<ul>
+<li>IP Address spoofing : </li>
+</ul>
+<pre><code class="language-bash">nmap -sS -p80,445,3389 -f --mtu 8 -S 192.168.1.1 -e eth0 192.168.1.24
 </code></pre>
-<p>Change source port with <code>-g</code> :</p>
+<ul>
+<li>Use Decoys :</li>
+</ul>
+<pre><code class="language-bash">nmap 10.10.10.10 -F -sS -Pn -n --disable-arp-ping -D RND:5 # Generate 5 random IP addresses
+</code></pre>
+<ul>
+<li>Change source port with <code>-g</code> :</li>
+</ul>
 <pre><code class="language-bash">nmap -sS -p80,445,3389 -f --mtu 8 -g 53 -D 192.168.1.1 --data-length 200 192.168.1.24
 </code></pre>
 <p>Increase time delay (less suspicious): </p>
