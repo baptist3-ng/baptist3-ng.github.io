@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../sqli/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../../shells/">
+        <link rel="next" href="../network_map/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
-        <title>API Pentesting - Pentest CS</title>
+        <title>Passive Enumeration - Pentest CS</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#discover-documentation" class="md-skip">
+        <a href="#certificate" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Pentest CS" class="md-header__button md-logo" aria-label="Pentest CS" data-md-component="logo">
+    <a href=".." title="Pentest CS" class="md-header__button md-logo" aria-label="Pentest CS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Pentesting
+              Passive Enumeration
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Pentest CS" class="md-nav__button md-logo" aria-label="Pentest CS" data-md-component="logo">
+    <a href=".." title="Pentest CS" class="md-nav__button md-logo" aria-label="Pentest CS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -199,7 +199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -216,10 +216,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Infrastructure_Based_Enumeration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Passive Enumeration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -228,6 +246,84 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Certificate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shodan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shodan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Staff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns-enumeration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 DNS Enumeration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 DNS Enumeration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns-zone-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ DNS Zone Transfer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -239,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network_map/" class="md-nav__link">
+      <a href="../network_map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -294,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/smb/" class="md-nav__link">
+      <a href="../windows/smb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -322,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../snmp/" class="md-nav__link">
+      <a href="../snmp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../smtp/" class="md-nav__link">
+      <a href="../smtp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -359,19 +455,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -385,7 +479,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Web Pentesting
@@ -399,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sqli/" class="md-nav__link">
+      <a href="../web/sqli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -417,28 +511,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    API Pentesting
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../web/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,51 +523,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#discover-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Discover Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifying-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Identifying endpoints
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mass-assignment" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Mass assignment
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -511,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shells/" class="md-nav__link">
+      <a href="../shells/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -549,29 +580,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#discover-documentation" class="md-nav__link">
+  <a href="#certificate" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Discover Documentation
+      Certificate
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#identifying-endpoints" class="md-nav__link">
+  <a href="#shodan" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Identifying endpoints
+      Shodan
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mass-assignment" class="md-nav__link">
+  <a href="#cloud" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Mass assignment
+      Cloud
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Staff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns-enumeration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 DNS Enumeration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 DNS Enumeration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns-zone-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ DNS Zone Transfer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -590,54 +654,75 @@
                   
 
 
-  <h1>API Pentesting</h1>
+  <h1>Passive Enumeration</h1>
 
-<p><strong>API</strong> stands for Application Programming Interface.</p>
-<p>Key terms : </p>
+<p>This type of information is gathered passively without direct and active scans.</p>
+<h2 id="certificate">Certificate</h2>
+<p>You can find subdomains thanks to the certificate. Another source to find more subdomains is <a href="https://crt.sh/">crt.sh</a>. This source is Certificate Transparency logs.</p>
 <ul>
-<li>Endpoints : <em>locations where an API receives requests about a specific resource on its server</em></li>
+<li><strong>JSON</strong> output :</li>
 </ul>
-<h2 id="discover-documentation">📚 Discover Documentation</h2>
-<p>If you find an endpoints like <code>/api/v1/user/service</code>, try to call each path section :</p>
-<ul>
-<li><code>/api/v1/user</code></li>
-<li><code>/api/v1</code></li>
-<li><code>/api</code> </li>
-</ul>
-<p>Change also the request type : GET, POST, DELETE, ...</p>
-<p>You'll maybe find interesting things...</p>
-<h2 id="identifying-endpoints">🔍 Identifying endpoints</h2>
-<p>Try to find some endpoints by guessing common patterns like <code>/api</code>.
-Check all files that you found on the server (JS files, ...).</p>
-<p>Change the HTTP method. An endpoint can have many options : </p>
-<ul>
-<li>GET : <code>/api/users</code> -&gt; List users</li>
-<li>POST : <code>/api/users</code> -&gt; Create user</li>
-<li>DELETE : <code>/api/users</code> -&gt; Delete user</li>
-</ul>
-<p>Change <code>Content-Type</code> header. A <code>json</code> input can be filtrated but a <code>XML</code> not.</p>
-<p>You can also try to bruteforce some endpoints/parameters with common API wordlist</p>
-<h2 id="mass-assignment">🎯 Mass assignment</h2>
-<p>For example, if you have a GET request on <code>/api/checkout</code> : </p>
-<pre><code class="language-json">{
-    &quot;chosen_discount&quot;:{
-        &quot;percentage&quot;:0
-    },
-     &quot;chosen_products&quot;:[{
-         &quot;product_id&quot;:&quot;1&quot;,
-         &quot;name&quot;:&quot;Lightweight \&quot;l33t\&quot; Leather Jacket&quot;,
-         &quot;quantity&quot;:1,
-         &quot;item_price&quot;:133700}]
-}
+<pre><code class="language-bash">curl -s https://crt.sh/\?q\=your-website.com\&amp;output\=json | jq .
 </code></pre>
-<p>And the POST request : </p>
-<pre><code class="language-json">{
-    &quot;chosen_products&quot;:[{
-        &quot;product_id&quot;:&quot;1&quot;,
-        &quot;quantity&quot;:1}]
-}
+<ul>
+<li>Get unique subdomains : </li>
+</ul>
+<pre><code class="language-bash">curl -s https://crt.sh/\?q\=your-website.com\&amp;output\=json | jq . | grep name | cut -d&quot;:&quot; -f2 | grep -v &quot;CN=&quot; | cut -d'&quot;' -f2 | awk '{gsub(/\\n/,&quot;\n&quot;);}1;' | sort -u
 </code></pre>
-<p>You can add parameters in the POST request like <code>"percentage":100</code> to reduce the price for example.</p>
+<ul>
+<li>Hosts directly accessible from Internet : </li>
+</ul>
+<pre><code class="language-bash">for i in $(cat subdomainlist);do host $i | grep &quot;has address&quot;
+</code></pre>
+<p><em>We are not allowed to test without the permission of third-party providers.</em></p>
+<h2 id="shodan">Shodan</h2>
+<p><a href="https://www.shodan.io/">Shodan</a> is used for devices research.</p>
+<ul>
+<li>Use CLI :</li>
+</ul>
+<pre><code class="language-bash">for i in $(cat ip-addresses.txt);do shodan host $i;done
+</code></pre>
+<p>You can also use the web version.</p>
+<h2 id="cloud">Cloud</h2>
+<ul>
+<li>Google Dorks :</li>
+</ul>
+<pre><code class="language-txt">intext:COMPANY-NAME inurl:amazonaws.com
+intext:COMPANY-NAME inurl:blob.core.windows.net
+</code></pre>
+<p>You can also use <a href="https://buckets.grayhatwarfare.com/">GrayHatWarfare</a> to do many different searches.</p>
+<h2 id="staff">Staff</h2>
+<p>Check website like LinkedIn to know more about employees, what they did for the company, like add security measures. Try also to look for Github repository.</p>
+<h2 id="dns-enumeration">🌐 DNS Enumeration</h2>
+<p>Enumerate information about <strong>DNS</strong> server.</p>
+<ul>
+<li><strong>dnsrecon</strong> on Kali Linux : </li>
+</ul>
+<pre><code class="language-bash">dnsrecon -d https://zonetransfer.me
+</code></pre>
+<ul>
+<li>Dig :</li>
+</ul>
+<pre><code class="language-bash">dig any your-website.com
+</code></pre>
+<ul>
+<li>
+<p><a href="https://dnsdumpster.com/">DNSDumpster</a></p>
+<p>Go to website and enter the target URL. The <em>View Graph</em> is useful !</p>
+</li>
+</ul>
+<h3 id="dns-zone-transfer">🗂️  DNS Zone Transfer</h3>
+<p>It involves an attacker requesting and receiving a copy of the entire <strong>DNS</strong> database, also known as a zone file, from a <strong>DNS</strong> server.</p>
+<ul>
+<li>dnsEnum : </li>
+</ul>
+<pre><code class="language-bash">dnsenum zonetransfer.me
+</code></pre>
+<ul>
+<li>dig : </li>
+</ul>
+<pre><code class="language-bash">dig axfr @NAMESERVER zonetransfer.me
+</code></pre>
 
 
 
@@ -684,10 +769,10 @@ Check all files that you found on the server (JS files, ...).</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
