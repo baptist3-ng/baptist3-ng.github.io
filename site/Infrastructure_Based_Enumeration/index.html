@@ -263,7 +263,7 @@
         <li class="md-nav__item">
   <a href="#certificate" class="md-nav__link">
     <span class="md-ellipsis">
-      Certificate
+      🔳 Certificate
     </span>
   </a>
   
@@ -272,7 +272,7 @@
         <li class="md-nav__item">
   <a href="#shodan" class="md-nav__link">
     <span class="md-ellipsis">
-      Shodan
+      🔳 Shodan
     </span>
   </a>
   
@@ -281,7 +281,7 @@
         <li class="md-nav__item">
   <a href="#cloud" class="md-nav__link">
     <span class="md-ellipsis">
-      Cloud
+      🔳 Cloud
     </span>
   </a>
   
@@ -290,7 +290,7 @@
         <li class="md-nav__item">
   <a href="#staff" class="md-nav__link">
     <span class="md-ellipsis">
-      Staff
+      🔳 Staff
     </span>
   </a>
   
@@ -418,6 +418,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../ftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../snmp/" class="md-nav__link">
         
   
@@ -465,10 +485,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -479,8 +499,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Web Pentesting
           </label>
@@ -582,7 +602,7 @@
         <li class="md-nav__item">
   <a href="#certificate" class="md-nav__link">
     <span class="md-ellipsis">
-      Certificate
+      🔳 Certificate
     </span>
   </a>
   
@@ -591,7 +611,7 @@
         <li class="md-nav__item">
   <a href="#shodan" class="md-nav__link">
     <span class="md-ellipsis">
-      Shodan
+      🔳 Shodan
     </span>
   </a>
   
@@ -600,7 +620,7 @@
         <li class="md-nav__item">
   <a href="#cloud" class="md-nav__link">
     <span class="md-ellipsis">
-      Cloud
+      🔳 Cloud
     </span>
   </a>
   
@@ -609,7 +629,7 @@
         <li class="md-nav__item">
   <a href="#staff" class="md-nav__link">
     <span class="md-ellipsis">
-      Staff
+      🔳 Staff
     </span>
   </a>
   
@@ -657,7 +677,7 @@
   <h1>Passive Enumeration</h1>
 
 <p>This type of information is gathered passively without direct and active scans.</p>
-<h2 id="certificate">Certificate</h2>
+<h2 id="certificate">🔳 Certificate</h2>
 <p>You can find subdomains thanks to the certificate. Another source to find more subdomains is <a href="https://crt.sh/">crt.sh</a>. This source is Certificate Transparency logs.</p>
 <ul>
 <li><strong>JSON</strong> output :</li>
@@ -675,7 +695,7 @@
 <pre><code class="language-bash">for i in $(cat subdomainlist);do host $i | grep &quot;has address&quot;
 </code></pre>
 <p><em>We are not allowed to test without the permission of third-party providers.</em></p>
-<h2 id="shodan">Shodan</h2>
+<h2 id="shodan">🔳 Shodan</h2>
 <p><a href="https://www.shodan.io/">Shodan</a> is used for devices research.</p>
 <ul>
 <li>Use CLI :</li>
@@ -683,7 +703,7 @@
 <pre><code class="language-bash">for i in $(cat ip-addresses.txt);do shodan host $i;done
 </code></pre>
 <p>You can also use the web version.</p>
-<h2 id="cloud">Cloud</h2>
+<h2 id="cloud">🔳 Cloud</h2>
 <ul>
 <li>Google Dorks :</li>
 </ul>
@@ -691,7 +711,7 @@
 intext:COMPANY-NAME inurl:blob.core.windows.net
 </code></pre>
 <p>You can also use <a href="https://buckets.grayhatwarfare.com/">GrayHatWarfare</a> to do many different searches.</p>
-<h2 id="staff">Staff</h2>
+<h2 id="staff">🔳 Staff</h2>
 <p>Check website like LinkedIn to know more about employees, what they did for the company, like add security measures. Try also to look for Github repository.</p>
 <h2 id="dns-enumeration">🌐 DNS Enumeration</h2>
 <p>Enumerate information about <strong>DNS</strong> server.</p>
@@ -711,7 +731,7 @@ intext:COMPANY-NAME inurl:blob.core.windows.net
 <p>Go to website and enter the target URL. The <em>View Graph</em> is useful !</p>
 </li>
 </ul>
-<h3 id="dns-zone-transfer">🗂️  DNS Zone Transfer</h3>
+<h3 id="dns-zone-transfer">🗂️ DNS Zone Transfer</h3>
 <p>It involves an attacker requesting and receiving a copy of the entire <strong>DNS</strong> database, also known as a zone file, from a <strong>DNS</strong> server.</p>
 <ul>
 <li>dnsEnum : </li>
