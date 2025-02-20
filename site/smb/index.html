@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../sqli/">
+        <link rel="prev" href="../ftp/">
       
       
-        <link rel="next" href="../../shells/">
+        <link rel="next" href="../snmp/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
-        <title>API Pentesting - Pentest CS</title>
+        <title>SMB - Pentest CS</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#discover-documentation" class="md-skip">
+        <a href="#footprinting" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Pentest CS" class="md-header__button md-logo" aria-label="Pentest CS" data-md-component="logo">
+    <a href=".." title="Pentest CS" class="md-header__button md-logo" aria-label="Pentest CS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Pentesting
+              SMB
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Pentest CS" class="md-nav__button md-logo" aria-label="Pentest CS" data-md-component="logo">
+    <a href=".." title="Pentest CS" class="md-nav__button md-logo" aria-label="Pentest CS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -199,7 +199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -219,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Infrastructure_Based_Enumeration/" class="md-nav__link">
+      <a href="../Infrastructure_Based_Enumeration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network_map/" class="md-nav__link">
+      <a href="../network_map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -259,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ftp/" class="md-nav__link">
+      <a href="../ftp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -276,124 +276,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../smb/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SMB
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../snmp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SNMP
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../smtp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SMTP
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Web Pentesting
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            Web Pentesting
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sqli/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SQL Injection
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -408,7 +290,7 @@
           
   
   <span class="md-ellipsis">
-    API Pentesting
+    SMB
   </span>
   
 
@@ -419,7 +301,7 @@
         
   
   <span class="md-ellipsis">
-    API Pentesting
+    SMB
   </span>
   
 
@@ -439,27 +321,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#discover-documentation" class="md-nav__link">
+  <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Discover Documentation
+      🔳 Footprinting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#identifying-endpoints" class="md-nav__link">
+  <a href="#list-shares" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Identifying endpoints
+      🔳 List shares
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mass-assignment" class="md-nav__link">
+  <a href="#enumerate-users" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Mass assignment
+      🔳 Enumerate users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bruteforce" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Bruteforce
     </span>
   </a>
   
@@ -469,6 +360,122 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SNMP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smtp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web Pentesting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Web Pentesting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web/sqli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL Injection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Pentesting
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -488,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shells/" class="md-nav__link">
+      <a href="../shells/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -526,27 +533,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#discover-documentation" class="md-nav__link">
+  <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Discover Documentation
+      🔳 Footprinting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#identifying-endpoints" class="md-nav__link">
+  <a href="#list-shares" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Identifying endpoints
+      🔳 List shares
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mass-assignment" class="md-nav__link">
+  <a href="#enumerate-users" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Mass assignment
+      🔳 Enumerate users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bruteforce" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Bruteforce
     </span>
   </a>
   
@@ -567,54 +583,110 @@
                   
 
 
-  <h1>API Pentesting</h1>
+  <h1>SMB</h1>
 
-<p><strong>API</strong> stands for Application Programming Interface.</p>
-<p>Key terms : </p>
+<blockquote>
+<p>SMB stands for Server Message Block. It is a network file sharing protocol that allows applications on a computer to read and write to files and to request services from server programs in a computer network.</p>
+</blockquote>
+<p>Source : <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview">Microsoft</a></p>
+<h2 id="footprinting">🔳 Footprinting</h2>
 <ul>
-<li>Endpoints : <em>locations where an API receives requests about a specific resource on its server</em></li>
+<li>Nmap SE:</li>
 </ul>
-<h2 id="discover-documentation">📚 Discover Documentation</h2>
-<p>If you find an endpoints like <code>/api/v1/user/service</code>, try to call each path section :</p>
-<ul>
-<li><code>/api/v1/user</code></li>
-<li><code>/api/v1</code></li>
-<li><code>/api</code> </li>
-</ul>
-<p>Change also the request type : GET, POST, DELETE, ...</p>
-<p>You'll maybe find interesting things...</p>
-<h2 id="identifying-endpoints">🔍 Identifying endpoints</h2>
-<p>Try to find some endpoints by guessing common patterns like <code>/api</code>.
-Check all files that you found on the server (JS files, ...).</p>
-<p>Change the HTTP method. An endpoint can have many options : </p>
-<ul>
-<li>GET : <code>/api/users</code> -&gt; List users</li>
-<li>POST : <code>/api/users</code> -&gt; Create user</li>
-<li>DELETE : <code>/api/users</code> -&gt; Delete user</li>
-</ul>
-<p>Change <code>Content-Type</code> header. A <code>json</code> input can be filtrated but a <code>XML</code> not.</p>
-<p>You can also try to bruteforce some endpoints/parameters with common API wordlist</p>
-<h2 id="mass-assignment">🎯 Mass assignment</h2>
-<p>For example, if you have a GET request on <code>/api/checkout</code> : </p>
-<pre><code class="language-json">{
-    &quot;chosen_discount&quot;:{
-        &quot;percentage&quot;:0
-    },
-     &quot;chosen_products&quot;:[{
-         &quot;product_id&quot;:&quot;1&quot;,
-         &quot;name&quot;:&quot;Lightweight \&quot;l33t\&quot; Leather Jacket&quot;,
-         &quot;quantity&quot;:1,
-         &quot;item_price&quot;:133700}]
-}
+<pre><code class="language-bash">nmap 10.129.14.128 -sV -sC -p139,445
 </code></pre>
-<p>And the POST request : </p>
-<pre><code class="language-json">{
-    &quot;chosen_products&quot;:[{
-        &quot;product_id&quot;:&quot;1&quot;,
-        &quot;quantity&quot;:1}]
-}
+<ul>
+<li>RPCclient:</li>
+</ul>
+<pre><code class="language-bash">rpcclient -U &quot;&quot; 10.129.14.128
+
+rpcclient $&gt; srvinfo
+rpcclient $&gt; enumdomains
+rpcclient $&gt; netshareenumall
+# ... Continue to enumerate with commands (type HELP).
 </code></pre>
-<p>You can add parameters in the POST request like <code>"percentage":100</code> to reduce the price for example.</p>
+<ul>
+<li><code>srvinfo</code> : Server information.</li>
+<li><code>enumdomains</code> : Enumerate all domains that are deployed in the network.</li>
+<li><code>querydominfo</code> : Provides domain, server, and user information of deployed domains.</li>
+<li><code>netshareenumall</code> : Enumerates all available shares.</li>
+<li><code>netsharegetinfo &lt;share&gt;</code> : Provides information about a specific share.</li>
+<li><code>enumdomusers</code> : Enumerates all domain users.</li>
+<li><code>queryuser &lt;RID&gt;</code> : Query user information by RID.</li>
+</ul>
+<h2 id="list-shares">🔳 List shares</h2>
+<ul>
+<li>With <strong>nxc</strong> tool :</li>
+</ul>
+<pre><code class="language-bash">nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
+</code></pre>
+<ul>
+<li>CrackMapExec:</li>
+</ul>
+<pre><code class="language-bash">crackmapexec smb 10.129.14.128 --shares -u '' -p ''
+</code></pre>
+<ul>
+<li>With <strong>smbMap</strong>, you can list shares and its content : </li>
+</ul>
+<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot;
+smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot; -r $SHARE
+</code></pre>
+<ul>
+<li>Download or Upload file : </li>
+</ul>
+<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;password&quot; --download &quot;C/flag.txt&quot;
+
+smbmap -H 10.0.28.123 -u &quot;administrator&quot; -p 'password' --upload '/root/backdoor' 'C$\backdoor
+</code></pre>
+<ul>
+<li>With <strong>smbclient</strong> : </li>
+</ul>
+<pre><code class="language-bash">smbclient -L //192.42.109.3/ -U &quot;&quot;
+smbclient -N -L //192.42.109.3/ # Anonymous session
+
+smbclient //192.42.109.3/public -U &quot;&quot;
+</code></pre>
+<h2 id="enumerate-users">🔳 Enumerate users</h2>
+<p>You can enumerate active users on the targets :</p>
+<ul>
+<li>Samrdump (Impacket):</li>
+</ul>
+<pre><code class="language-bash">samrdump 10.10.10.10
+</code></pre>
+<ul>
+<li>enum4linux-ng:</li>
+</ul>
+<pre><code class="language-bash"># -a to enum all options
+enum4linux-ng -A &lt;IP&gt;
+</code></pre>
+<ul>
+<li>With rpcclient:</li>
+</ul>
+<pre><code class="language-bash">rpcclient -U &quot;&quot; -N &lt;IP&gt; 
+
+rpcclient $&gt; enumdomusers
+rpcclient $&gt; queryuser 0x$$$
+
+rpcclient $&gt; querygroup 0x$$$
+</code></pre>
+<ul>
+<li>Bruteforce User RIDs:</li>
+</ul>
+<pre><code class="language-bash">for i in $(seq 500 1100);do rpcclient -N -U &quot;&quot; 10.129.14.128 -c &quot;queryuser 0x$(printf '%x\n' $i)&quot; | grep &quot;User Name\|user_rid\|group_rid&quot; &amp;&amp; echo &quot;&quot;;done
+
+# NetExec:
+nxc smb &quot;10.129.146.37&quot; -u '' -p '' --rid-brute
+</code></pre>
+<ul>
+<li>Metasploit:</li>
+</ul>
+<pre><code class="language-bash"># Metasploit Module :
+use auxiliary/scanner/smb/smb_enumusers
+</code></pre>
+<h2 id="bruteforce">🔳 Bruteforce</h2>
+<p>This can be done with <strong>hydra</strong> : </p>
+<pre><code class="language-bash">hydra -l Administrator -P /opt/rockyou.txt smb://&lt;IP&gt; -v -V
+</code></pre>
 
 
 
@@ -661,10 +733,10 @@ Check all files that you found on the server (JS files, ...).</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
