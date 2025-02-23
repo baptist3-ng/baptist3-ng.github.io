@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../snmp/">
+        <link rel="prev" href="../ftp/">
       
       
-        <link rel="next" href="../web/sqli/">
+        <link rel="next" href="../dns/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>SMTP - Pentest CS</title>
+        <title>25 - SMTP - Pentest CS</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#version" class="md-skip">
+        <a href="#footprinting" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SMTP
+              25 - SMTP
             
           </span>
         </div>
@@ -263,47 +263,7 @@
         
   
   <span class="md-ellipsis">
-    FTP
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../smb/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SMB
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../snmp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SNMP
+    21 - FTP
   </span>
   
 
@@ -330,7 +290,7 @@
           
   
   <span class="md-ellipsis">
-    SMTP
+    25 - SMTP
   </span>
   
 
@@ -341,7 +301,7 @@
         
   
   <span class="md-ellipsis">
-    SMTP
+    25 - SMTP
   </span>
   
 
@@ -361,9 +321,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#version" class="md-nav__link">
+  <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
-      📄 Version
+      🔳 Footprinting
     </span>
   </a>
   
@@ -372,7 +332,7 @@
         <li class="md-nav__item">
   <a href="#username-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      👤 Username Enumeration
+      🔳 Username Enumeration
     </span>
   </a>
   
@@ -381,7 +341,7 @@
         <li class="md-nav__item">
   <a href="#send-an-email" class="md-nav__link">
     <span class="md-ellipsis">
-      📧 Send an email
+      🔳 Send an email
     </span>
   </a>
   
@@ -401,6 +361,166 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../dns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    53 - DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    110,143,993,995 - IMAP/POP3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    139,445 - SMB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    161 - SNMP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipmi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    623 - IPMI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mssql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1433 - MSSQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oracleTNS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1521 - Oracle TNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2049 - NFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -409,10 +529,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -423,8 +543,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
             Web Pentesting
           </label>
@@ -524,9 +644,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#version" class="md-nav__link">
+  <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
-      📄 Version
+      🔳 Footprinting
     </span>
   </a>
   
@@ -535,7 +655,7 @@
         <li class="md-nav__item">
   <a href="#username-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
-      👤 Username Enumeration
+      🔳 Username Enumeration
     </span>
   </a>
   
@@ -544,7 +664,7 @@
         <li class="md-nav__item">
   <a href="#send-an-email" class="md-nav__link">
     <span class="md-ellipsis">
-      📧 Send an email
+      🔳 Send an email
     </span>
   </a>
   
@@ -565,13 +685,18 @@
                   
 
 
-  <h1>SMTP</h1>
+  <h1>25 - SMTP</h1>
 
 <blockquote>
 <p>SMTP (Simple Mail Transfer Protocol) is a communication protocol that is used for
 the transmission of email.</p>
 </blockquote>
-<h3 id="version">📄 Version</h3>
+<h2 id="footprinting">🔳 Footprinting</h2>
+<ul>
+<li>Nmap SE:</li>
+</ul>
+<pre><code class="language-bash">nmap --script &quot;smtp-*&quot; 10.10.10.10
+</code></pre>
 <p>Get the SMTP version :</p>
 <pre><code class="language-bash"># Metasploit Module :
 use auxiliary/scanner/smtp/smtp_version
@@ -579,7 +704,7 @@ use auxiliary/scanner/smtp/smtp_version
 # Banner Grabbing :
 nc -vn &lt;IP&gt; 25
 </code></pre>
-<h3 id="username-enumeration">👤 Username Enumeration</h3>
+<h2 id="username-enumeration">🔳 Username Enumeration</h2>
 <p><em>Source</em> : <a href="https://book.hacktricks.xyz/network-services-pentesting/pentesting-smtp#username-bruteforce-enumeration">HackTricks</a></p>
 <p><strong>Manually</strong> : This technique uses <code>VRFY</code> : </p>
 <pre><code class="language-bash">$ telnet 1.1.1.1 25
@@ -599,17 +724,13 @@ VRFY blah
 <p>There are other techniques ! Please check the HackTricks link !</p>
 <p><strong>Automatic</strong> : </p>
 <pre><code class="language-bash"># smtp-user-enum :
-Examples:
-
-$ smtp-user-enum -M VRFY -U users.txt -t 10.0.0.1
-$ smtp-user-enum -M EXPN -u admin1 -t 10.0.0.1
-$ smtp-user-enum -M RCPT -U users.txt -T mail-server-ips.txt
-$ smtp-user-enum -M EXPN -D example.com -U users.txt -t 10.0.0.1
+# Change the timeout if you don't get result
+smtp-user-enum -m VRFY -U users.txt 10.129.137.101 25 --timeout-enum 15
 
 # Metasploit Module :
 use auxiliary/scanner/smtp/smtp_enum
 </code></pre>
-<h3 id="send-an-email">📧 Send an email</h3>
+<h2 id="send-an-email">🔳 Send an email</h2>
 <pre><code class="language-bash"># sendemail :
 sendemail -f admin@attacker.xyz -t root@openmailbox.xyz -s demo.ine.local -u Fakemail -m &quot;Hi root, a fake from admin&quot; -o tls=no
 </code></pre>

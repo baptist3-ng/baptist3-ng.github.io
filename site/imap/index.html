@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../imap/">
+        <link rel="prev" href="../dns/">
       
       
-        <link rel="next" href="../snmp/">
+        <link rel="next" href="../smb/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>139,445 - SMB - Pentest CS</title>
+        <title>110,143,993,995 - IMAP/POP3 - Pentest CS</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#footprinting" class="md-skip">
+        <a href="#imap-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              139,445 - SMB
+              110,143,993,995 - IMAP/POP3
             
           </span>
         </div>
@@ -316,26 +316,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../imap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    110,143,993,995 - IMAP/POP3
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -350,7 +330,7 @@
           
   
   <span class="md-ellipsis">
-    139,445 - SMB
+    110,143,993,995 - IMAP/POP3
   </span>
   
 
@@ -361,7 +341,7 @@
         
   
   <span class="md-ellipsis">
-    139,445 - SMB
+    110,143,993,995 - IMAP/POP3
   </span>
   
 
@@ -381,36 +361,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#imap-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 IMAP Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pop3-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 POP3 Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
       🔳 Footprinting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-shares" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 List shares
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enumerate-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Enumerate users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bruteforce" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Bruteforce
     </span>
   </a>
   
@@ -420,6 +391,26 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    139,445 - SMB
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -653,36 +644,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#imap-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 IMAP Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pop3-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔳 POP3 Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#footprinting" class="md-nav__link">
     <span class="md-ellipsis">
       🔳 Footprinting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-shares" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 List shares
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enumerate-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Enumerate users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bruteforce" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔳 Bruteforce
     </span>
   </a>
   
@@ -703,109 +685,58 @@
                   
 
 
-  <h1>139,445 - SMB</h1>
+  <h1>110,143,993,995 - IMAP/POP3</h1>
 
 <blockquote>
-<p>SMB stands for Server Message Block. It is a network file sharing protocol that allows applications on a computer to read and write to files and to request services from server programs in a computer network.</p>
+<p>With the help of the Internet Message Access Protocol (IMAP), access to emails from a mail server is possible. Unlike the Post Office Protocol (POP3), IMAP allows online management of emails directly on the server and supports folder structures. </p>
 </blockquote>
-<p>Source : <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview">Microsoft</a></p>
+<h2 id="imap-commands">🔳 IMAP Commands</h2>
+<ul>
+<li><code>1 LOGIN username password</code> : User's login.  </li>
+<li><code>1 LIST "" *</code> : Lists all directories.  </li>
+<li><code>1 CREATE "INBOX"</code> : Creates a mailbox with a specified name.  </li>
+<li><code>1 DELETE "INBOX"</code> : Deletes a mailbox.  </li>
+<li><code>1 RENAME "ToRead" "Important"</code> : Renames a mailbox.  </li>
+<li><code>1 LSUB "" *</code> : Returns a subset of names from the set of names that the user has declared as active or subscribed.  </li>
+<li><code>1 SELECT INBOX</code> : Selects a mailbox so that messages in the mailbox can be accessed.  </li>
+<li><code>1 UNSELECT INBOX</code> : Exits the selected mailbox.</li>
+<li><code>1 SEARCH ALL</code> : List messages.</li>
+<li><code>1 FETCH 1 FULL</code> : Read content.</li>
+<li><code>1 FETCH 1 (BODY[HEADER.FIELDS (FROM SUBJECT)])</code> : Read headers.</li>
+<li><code>1 FETCH 1 BODY[TEXT]</code> : Read body content.</li>
+<li><code>1 FETCH &lt;ID&gt; all</code> : Retrieves data associated with a message in the mailbox.  </li>
+<li><code>1 CLOSE</code> : Removes all messages with the Deleted flag set.  </li>
+<li><code>1 LOGOUT</code> : Closes the connection with the IMAP server.</li>
+</ul>
+<h2 id="pop3-commands">🔳 POP3 Commands</h2>
+<ul>
+<li><code>USER username</code> : Identifies the user.  </li>
+<li><code>PASS password</code> : Authenticates the user using their password.  </li>
+<li><code>STAT</code> : Requests the number of saved emails from the server.  </li>
+<li><code>LIST</code> : Requests the number and size of all emails from the server.  </li>
+<li><code>RETR id</code> : Requests the server to deliver the requested email by ID.  </li>
+<li><code>DELE id</code> : Requests the server to delete the requested email by ID.  </li>
+<li><code>CAPA</code> : Requests the server to display its capabilities.  </li>
+<li><code>RSET</code> : Requests the server to reset the transmitted information.  </li>
+<li><code>QUIT</code> : Closes the connection with the POP3 server.</li>
+</ul>
 <h2 id="footprinting">🔳 Footprinting</h2>
 <ul>
 <li>Nmap SE:</li>
 </ul>
-<pre><code class="language-bash">nmap 10.129.14.128 -sV -sC -p139,445
+<pre><code class="language-bash">nmap 10.129.14.128 -sV -p110,143,993,995 -sC
 </code></pre>
 <ul>
-<li>RPCclient:</li>
+<li>cURL:</li>
 </ul>
-<pre><code class="language-bash">rpcclient -U &quot;&quot; 10.129.14.128
-
-rpcclient $&gt; srvinfo
-rpcclient $&gt; enumdomains
-rpcclient $&gt; netshareenumall
-# ... Continue to enumerate with commands (type HELP).
+<pre><code class="language-bash">curl -k 'imaps://10.129.14.128' --user user:p4ssw0rd
+curl -k 'imaps://10.129.14.128' --user user:p4ssw0rd -v
 </code></pre>
 <ul>
-<li><code>srvinfo</code> : Server information.</li>
-<li><code>enumdomains</code> : Enumerate all domains that are deployed in the network.</li>
-<li><code>querydominfo</code> : Provides domain, server, and user information of deployed domains.</li>
-<li><code>netshareenumall</code> : Enumerates all available shares.</li>
-<li><code>netsharegetinfo &lt;share&gt;</code> : Provides information about a specific share.</li>
-<li><code>enumdomusers</code> : Enumerates all domain users.</li>
-<li><code>queryuser &lt;RID&gt;</code> : Query user information by RID.</li>
+<li>OpenSSL:</li>
 </ul>
-<h2 id="list-shares">🔳 List shares</h2>
-<ul>
-<li>With <strong>nxc</strong> tool :</li>
-</ul>
-<pre><code class="language-bash">nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
-</code></pre>
-<ul>
-<li>CrackMapExec:</li>
-</ul>
-<pre><code class="language-bash">crackmapexec smb 10.129.14.128 --shares -u '' -p ''
-</code></pre>
-<ul>
-<li>With <strong>smbMap</strong>, you can list shares and its content : </li>
-</ul>
-<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot;
-smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;smbserver_771&quot; -r $SHARE
-</code></pre>
-<ul>
-<li>Download or Upload file : </li>
-</ul>
-<pre><code class="language-bash">smbmap -H 10.2.16.224 -u &quot;administrator&quot; -p &quot;password&quot; --download &quot;C/flag.txt&quot;
-
-smbmap -H 10.0.28.123 -u &quot;administrator&quot; -p 'password' --upload '/root/backdoor' 'C$\backdoor
-</code></pre>
-<ul>
-<li>With <strong>smbclient</strong> : </li>
-</ul>
-<pre><code class="language-bash">smbclient -L //192.42.109.3/ -U &quot;&quot;
-smbclient -N -L //192.42.109.3/ # Anonymous session
-
-smbclient //192.42.109.3/public -U &quot;&quot;
-</code></pre>
-<h2 id="enumerate-users">🔳 Enumerate users</h2>
-<p>You can enumerate active users on the targets :</p>
-<ul>
-<li>Samrdump (Impacket):</li>
-</ul>
-<pre><code class="language-bash">samrdump 10.10.10.10
-</code></pre>
-<ul>
-<li>enum4linux-ng:</li>
-</ul>
-<pre><code class="language-bash"># -a to enum all options
-enum4linux-ng -A &lt;IP&gt;
-</code></pre>
-<ul>
-<li>With rpcclient:</li>
-</ul>
-<pre><code class="language-bash">rpcclient -U &quot;&quot; -N &lt;IP&gt; 
-
-rpcclient $&gt; enumdomusers
-rpcclient $&gt; queryuser 0x$$$
-
-rpcclient $&gt; querygroup 0x$$$
-</code></pre>
-<ul>
-<li>Bruteforce User RIDs:</li>
-</ul>
-<pre><code class="language-bash">for i in $(seq 500 1100);do rpcclient -N -U &quot;&quot; 10.129.14.128 -c &quot;queryuser 0x$(printf '%x\n' $i)&quot; | grep &quot;User Name\|user_rid\|group_rid&quot; &amp;&amp; echo &quot;&quot;;done
-
-# NetExec:
-nxc smb &quot;10.129.146.37&quot; -u '' -p '' --rid-brute
-</code></pre>
-<ul>
-<li>Metasploit:</li>
-</ul>
-<pre><code class="language-bash"># Metasploit Module :
-use auxiliary/scanner/smb/smb_enumusers
-</code></pre>
-<h2 id="bruteforce">🔳 Bruteforce</h2>
-<p>This can be done with <strong>hydra</strong> : </p>
-<pre><code class="language-bash">hydra -l Administrator -P /opt/rockyou.txt smb://&lt;IP&gt; -v -V
+<pre><code class="language-bash">openssl s_client -connect 10.129.14.128:pop3s
+openssl s_client -connect 10.129.14.128:imaps
 </code></pre>
 
 
