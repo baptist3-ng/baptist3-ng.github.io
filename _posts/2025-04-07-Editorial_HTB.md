@@ -4,7 +4,7 @@ date: 2025-04-07 12:00:00 +/-0000
 categories: [HackTheBox, Editorial]
 image:
   path: ../assets/img/editorial/Editorial.png
-tags: [hackthebox, iclean]     # TAG names should always be lowercase
+tags: [hackthebox, editorial]     # TAG names should always be lowercase
 description: In this CTF, we will exploit an SSRF vulnerability in a form. Then, we will retrieve credentials to gain SSH access. Finally, a vulnerable Python script will allow us to achieve RCE as root.
 author: baptist3-ng
 ---
