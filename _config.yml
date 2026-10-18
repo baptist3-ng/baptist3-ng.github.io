@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://chirpy-img.netlify.app/commons/avatar.jpg
+avatar: https://images.radio-canada.ca/q_auto,w_635/v1/ici-info/4x3/bad-bunny-film-debi-tirar-mas-fotos-37910.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
